@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Airlines_Klimov"
         mc:Ignorable="d"
-        Title="Управление авиалиниями" Height="550" Width="963" MinHeight="550" MinWidth="963">
+        Title="Управление авиалиниями" Height="600" Width="963" MinHeight="600" MinWidth="963">
     <Grid>
         <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
     </Grid>

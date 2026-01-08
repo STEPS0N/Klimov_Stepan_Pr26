@@ -36,7 +36,7 @@ namespace Airlines_Klimov
             if (_pages == pages.main)
                 frame.Navigate(new Pages.Main(this));
             if (_pages == pages.ticket)
-                frame.Navigate(new Pages.Ticket(this, this.ToString(), this.ToString()));
+                frame.Navigate(new Pages.Ticket(this, "", "", DateTime.MinValue, DateTime.MinValue));
         }
     }
 }

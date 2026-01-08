@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Airlines_Klimov.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="850"
+      d:DesignHeight="600" d:DesignWidth="963"
       Title="Main">
 
     <Grid Background="#0080ff">
@@ -29,6 +29,8 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <StackPanel Grid.Row="0" Margin="0,0,0,10">
                     <Label Content="Поиск дешёвых авиабилетов" Foreground="White" FontSize="30" FontWeight="Bold" Margin="0,0,0,7"
@@ -45,6 +47,14 @@
                     <TextBox x:Name="whereTb" Padding="5" Height="35" FontSize="18" Foreground="Black" VerticalAlignment="Top"/>
                 </StackPanel>
                 <StackPanel Grid.Row="3">
+                    <Label Content="Дата вылета:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="17" Margin="0,0,0,5"/>
+                    <DatePicker x:Name="fromDate" Height="35" FontSize="18" Foreground="Black" Background="Coral" VerticalAlignment="Top"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4">
+                    <Label Content="Дата прилёта:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="17" Margin="0,0,0,5"/>
+                    <DatePicker x:Name="whereDate" Height="35" FontSize="18" Foreground="Black" Background="Coral" VerticalAlignment="Top"/>
+                </StackPanel>
+                <StackPanel Grid.Row="5">
                     <Button VerticalAlignment="Top" HorizontalAlignment="Right" Height="35" Width="150" Margin="0,15,0,0" Content="Найти"
                             FontSize="17" Background="Coral" Foreground="White" FontWeight="Bold" Click="Search"/>
                 </StackPanel>

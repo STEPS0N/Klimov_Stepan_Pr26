@@ -35,7 +35,10 @@ namespace Airlines_Klimov.Pages
 
         private void Search(object sender, RoutedEventArgs e)
         {
-            mainWindow.frame.Navigate(new Pages.Ticket(mainWindow, fromTb.Text, whereTb.Text));
+            DateTime fromDateValue = fromDate.SelectedDate == null ? DateTime.MinValue : fromDate.SelectedDate.Value;
+            DateTime whereDateValue = whereDate.SelectedDate == null ? DateTime.MinValue : whereDate.SelectedDate.Value;
+
+            mainWindow.frame.Navigate(new Pages.Ticket(mainWindow, fromTb.Text, whereTb.Text, fromDateValue, whereDateValue));
         }
     }
 }
