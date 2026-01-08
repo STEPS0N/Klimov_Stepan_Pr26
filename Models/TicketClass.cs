@@ -8,19 +8,21 @@ namespace Airlines_Klimov.Models
 {
     public class TicketClass
     {
-        public string price { get; set; }
-        public string from { get; set; }
-        public string to { get; set; }
-        public string time_start { get; set; }
-        public string time_way { get; set; }
+        public int Price { get; set; }
+        public string From { get; set; }
+        public string To { get; set; }
+        public DateTime Time_start { get; set; }
+        public DateTime Time_end { get; set; }
 
-        public TicketClass(string price, string from, string to, string time_start, string time_way)
+        public TicketClass() { }
+
+        public TicketClass(int Price, string From, string To, DateTime Time_start, DateTime Time_end)
         {
-            this.price = price;
-            this.from = from;
-            this.to = to;
-            this.time_start = time_start;
-            this.time_way = time_way;
+            this.Price = Price;
+            this.From = From;
+            this.To = To;
+            this.Time_start = Time_start;
+            this.Time_end = Time_end;
         }
     }
 }

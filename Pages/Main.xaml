@@ -38,11 +38,11 @@
                 </StackPanel>
                 <StackPanel Grid.Row="1">
                     <Label Content="Откуда:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="17" Margin="0,0,0,5"/>
-                    <TextBox x:Name="fromTb" Height="35" FontSize="18" Foreground="Black" VerticalAlignment="Top"/>
+                    <TextBox x:Name="fromTb" Padding="5" Height="35" FontSize="18" Foreground="Black" VerticalAlignment="Top"/>
                 </StackPanel>
                 <StackPanel Grid.Row="2">
                     <Label Content="Куда:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="17" Margin="0,0,0,5"/>
-                    <TextBox x:Name="whereTb" Height="35" FontSize="18" Foreground="Black" VerticalAlignment="Top"/>
+                    <TextBox x:Name="whereTb" Padding="5" Height="35" FontSize="18" Foreground="Black" VerticalAlignment="Top"/>
                 </StackPanel>
                 <StackPanel Grid.Row="3">
                     <Button VerticalAlignment="Top" HorizontalAlignment="Right" Height="35" Width="150" Margin="0,15,0,0" Content="Найти"

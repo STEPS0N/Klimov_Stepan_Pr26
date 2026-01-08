@@ -6,42 +6,42 @@
              xmlns:local="clr-namespace:Airlines_Klimov.Elements"
              mc:Ignorable="d">
 
-    <Grid Background="#dcdcdc">
-        <Border>
-            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+    <Grid Background="#dcdcdc" Margin="0,0,0,7">
+        <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Margin="15" VerticalAlignment="Center">
-                    <Label Content="1999 Р" FontSize="25" VerticalAlignment="Top"
+                    <Label x:Name="lPrice" Content="1999 Р" FontSize="25" VerticalAlignment="Top"
                            HorizontalAlignment="Center" Margin="0,0,0,10"/>
                     <Button Content="Подробнее" Foreground="White" Background="Coral" Width="150" FontSize="17" Height="30"/>
                 </StackPanel>
                 <StackPanel Grid.Column="1" Margin="15" VerticalAlignment="Center">
-                    <Label Content="pobeda" FontSize="17" VerticalAlignment="Top"
+                    <Label Content="Победа" FontSize="17" VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="0,0,0,10"/>
-                    <Label Content="05:50" FontSize="23" VerticalAlignment="Top"
+                    <Label x:Name="startTime" Content="05:50" FontSize="23" VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="0,0,0,5"/>
-                    <Label Content="Пермь" FontSize="15" VerticalAlignment="Top"
+                    <Label x:Name="from" Content="Пермь" FontSize="15" VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="0,0,0,5"/>
-                    <Label Content="29 сентября 2021" FontSize="15" VerticalAlignment="Top"
+                    <Label x:Name="startDate" Content="29 сентября 2021" FontSize="15" VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="0,0,0,5"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2" Margin="15" VerticalAlignment="Center">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="0">
                             <Image Source="/Images/from.png" Width="30"/>
                         </StackPanel>
                         <StackPanel Grid.Column="1">
-                            <Label Content="В пути: 2 ч. 15 мин." FontSize="15" VerticalAlignment="Top"
+                            <Label x:Name="way" Content="В пути: 2 ч. 15 мин." FontSize="15" VerticalAlignment="Top"
                                    HorizontalAlignment="Center" Margin="125,0,125,0"/>
                         </StackPanel>
                         <StackPanel Grid.Column="2">
@@ -50,18 +50,19 @@
                     </Grid>
                     <Grid>
                         <StackPanel>
-                            <Rectangle Width="450" Height="10" Fill="White" RadiusX="1.917" RadiusY="1.917"/>
+                            <Rectangle Width="Auto" Height="10" Fill="White" RadiusX="1.917" RadiusY="1.917"
+                                       HorizontalAlignment="Stretch"/>
                         </StackPanel>
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Column="3" Margin="15" VerticalAlignment="Center">
-                    <Label Content="pobeda" FontSize="17" VerticalAlignment="Top"
+                    <Label Content="Победа" FontSize="17" VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="0,0,0,10"/>
-                    <Label Content="06:50" FontSize="23" VerticalAlignment="Top"
+                    <Label x:Name="endTime" Content="06:50" FontSize="23" VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="0,0,0,5"/>
-                    <Label Content="Казань" FontSize="15" VerticalAlignment="Top"
+                    <Label x:Name="to" Content="Казань" FontSize="15" VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="0,0,0,5"/>
-                    <Label Content="29 сентября 2021" FontSize="15" VerticalAlignment="Top"
+                    <Label x:Name="endDate" Content="29 сентября 2021" FontSize="15" VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="0,0,0,5"/>
                 </StackPanel>
             </Grid>
