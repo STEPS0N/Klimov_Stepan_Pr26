@@ -19,6 +19,21 @@ namespace Airlines_Klimov
         public MainWindow()
         {
             InitializeComponent();
+            OpenPage(pages.main);
+        }
+
+        public enum pages
+        {
+            main,
+            ticket
+        }
+
+        public void OpenPage(pages _pages)
+        {
+            if (_pages == pages.main)
+                frame.Navigate(new Pages.Main(this));
+            if (_pages == pages.ticket)
+                frame.Navigate(new Pages.Ticket(this));
         }
     }
 }

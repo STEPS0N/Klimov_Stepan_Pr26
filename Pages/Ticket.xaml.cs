@@ -20,9 +20,17 @@ namespace Airlines_Klimov.Pages
     /// </summary>
     public partial class Ticket : Page
     {
-        public Ticket()
+        public MainWindow mainWindow;
+
+        public Ticket(MainWindow _mainWindow, string from, string where)
         {
             InitializeComponent();
+            mainWindow = _mainWindow;
+        }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            mainWindow.OpenPage(MainWindow.pages.main);
         }
     }
 }

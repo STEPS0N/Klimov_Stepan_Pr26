@@ -20,19 +20,22 @@ namespace Airlines_Klimov.Pages
     /// </summary>
     public partial class Main : Page
     {
-        public Main()
+        public MainWindow mainWindow;
+
+        public Main(MainWindow _mainWindow)    
         {
             InitializeComponent();
+            mainWindow = _mainWindow;
         }
 
         private void Shutdown(object sender, RoutedEventArgs e)
         {
-
+            mainWindow.Close();
         }
 
         private void Search(object sender, RoutedEventArgs e)
         {
-
+            mainWindow.frame.Navigate(new Pages.Ticket(mainWindow, fromTb.Text, whereTb.Text));
         }
     }
 }

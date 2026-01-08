@@ -19,7 +19,7 @@
                 <Label Grid.Column="0" Content="Управление авиалиниями" VerticalAlignment="Center" HorizontalAlignment="Left"
        Margin="65,0,0,0" FontSize="20" Foreground="White" FontWeight="Bold"/>
                 <Button Grid.Column="1" Width="142" Height="35" VerticalAlignment="Center" HorizontalAlignment="Left"
-        Margin="273,0,0,0" Content="Вернуться" FontSize="17" Background="White" Click="Shutdown" FontWeight="Bold"/>
+        Margin="273,0,0,0" Content="Вернуться" FontSize="17" Background="White" Click="Back" FontWeight="Bold"/>
             </Grid>
         </Border>
         <Border Margin="0,55,0,0">
