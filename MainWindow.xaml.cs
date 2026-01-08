@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Airlines_Klimov.Models;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,6 +17,8 @@ namespace Airlines_Klimov
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<TicketClass> TicketClasses = new List<TicketClass>();
+
         public MainWindow()
         {
             InitializeComponent();
